@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>santa special</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script></head>
+<body>
+  <audio id="myAudio" autoplay loop>
+    <source src="./images/InShot_20241221_120214142(2).mp3"type="audio/mp3"  preload="auto">
+  </audio>
+  <div class="pg1" id="pg1">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="dogbuddi">
+          <button onclick="play()" class="butn">
+          <img src="./images/grclaus.png">
+          </button>
+        </div>
+      </div>
+      <div class="col-md-1">
+        <div class="buddi">
+          <img src="./images/santabuddy.png">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="message" id="msg1">
+          <h1>Hello Dear,</h1>
+          <p class="typing-animation" id="msgg">
+          </p>
+        </div>
+        <div class="message2" id="msg2">
+          <h1>please tell me your name...</h1>
+          <div class="namein">
+           <form>
+            <input type="text" id="msg2in" placeholder="Enter Your Name" required>
+            <button class="nxt" onclick="gender()" type="button"><i class='bx bx-right-arrow-alt'></i></button>
+           </form>
+          </div>
+
+        </div>
+        <div class="message3" id="msg3">
+          <h1>please select your gender...</h1>
+          <div class="namein">
+            <select id="gender" name="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+              <option value="prefer-not-to-say">Prefer not to say</option>
+            </select>
+            <button class="nxt" onclick="redirect()" type="submit"><i class='bx bx-right-arrow-alt'></i></button>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-md-2">
+        <img src="./images/ballsdec.png">
+      </div>
+    </div>
+  </div>
+  
+  <script src="./javascript/javascript.js"></script>
+  
+</body>
+</html>
